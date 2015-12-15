@@ -151,21 +151,7 @@ Other Style Guides
     const item = {};
     ```
 
-  - [3.2](#3.2) <a name='3.2'></a> If your code will be executed in browsers in script context, don't use [reserved words](http://es5.github.io/#x7.6.1) as keys. It won't work in IE8. [More info](https://github.com/airbnb/javascript/issues/61). It’s OK to use them in ES6 modules and server-side code.
-
-    ```javascript
-    // bad
-    const superman = {
-      default: { clark: 'kent' },
-      private: true,
-    };
-
-    // good
-    const superman = {
-      defaults: { clark: 'kent' },
-      hidden: true,
-    };
-    ```
+  - ~~[3.2](#3.2)~~ Rule was removed.
 
   - [3.3](#3.3) <a name='3.3'></a> Use readable synonyms in place of reserved words.
 
@@ -1366,26 +1352,9 @@ Other Style Guides
 
 ## Whitespace
 
-  - [18.1](#18.1) <a name='18.1'></a> Use soft tabs set to 2 spaces.
+  - [18.1](#18.1) <a name='18.1'></a> Use tabs for indentation.
 
   eslint rules: [`indent`](http://eslint.org/docs/rules/indent.html).
-
-    ```javascript
-    // bad
-    function () {
-    ∙∙∙∙const name;
-    }
-
-    // bad
-    function () {
-    ∙const name;
-    }
-
-    // good
-    function () {
-    ∙∙const name;
-    }
-    ```
 
   - [18.2](#18.2) <a name='18.2'></a> Place 1 space before the leading brace.
 
