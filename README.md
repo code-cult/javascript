@@ -1352,26 +1352,9 @@ Other Style Guides
 
 ## Whitespace
 
-  - [18.1](#18.1) <a name='18.1'></a> Use soft tabs set to 2 spaces.
+  - [18.1](#18.1) <a name='18.1'></a> Use tabs for indentation.
 
   eslint rules: [`indent`](http://eslint.org/docs/rules/indent.html).
-
-    ```javascript
-    // bad
-    function () {
-    ∙∙∙∙const name;
-    }
-
-    // bad
-    function () {
-    ∙const name;
-    }
-
-    // good
-    function () {
-    ∙∙const name;
-    }
-    ```
 
   - [18.2](#18.2) <a name='18.2'></a> Place 1 space before the leading brace.
 
